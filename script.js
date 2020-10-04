@@ -1,5 +1,5 @@
 /**
- * TODO: Change sortMoviesByRank() function to sort movies list by rank
+ *̶ ̶T̶O̶D̶O̶:̶ ̶C̶h̶a̶n̶g̶e̶ ̶s̶o̶r̶t̶M̶o̶v̶i̶e̶s̶B̶y̶R̶a̶n̶k̶(̶)̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶ ̶t̶o̶ ̶s̶o̶r̶t̶ ̶m̶o̶v̶i̶e̶s̶ ̶l̶i̶s̶t̶ ̶b̶y̶ ̶r̶a̶n̶k̶
  * TODO: Sort movies by id, rank, and title through dynamic function
  * TODO: Create helper function called getMaxMovieObject() for finding max movie
  */
@@ -69,6 +69,7 @@ window.onload = function() {
  * You don't have to worry so much about this
  */
 function displayMovies(movies){
+    sortMoviesByRank(movies)
     let table = "<table border='1' style='width: 100%'>";
     table += "<tr><th>ID</th><th>Name</th><th>Rank</th></tr>";
     for(let index=0; index<movies.length; index++){
@@ -89,26 +90,26 @@ function displayMovies(movies){
  * HINT: make sure you are comparing the right value in in if(...)
  * HINT: replace numbers with movies .
  */
-function sortMoviesByRank(numbers){
+function sortMoviesByRank(movies){
   // Code from previous sortBestRatingsFirst() function
-  for (let j = 0; j < numbers.length - 1; j++) {
+  for (let j = 0; j < movies.length - 1; j++) {
 
-      let max_num = numbers[j];
+      let max_num = movies[j];
       let max_location = j;
 
-      for (let i = j; i < numbers.length; i++) {
-          if (numbers[i] > max_num) {
+      for (let i = j; i < movies.length; i++) {
+          if (movies[i].rank > max_num.rank) {
               // Know max AND it's index (location)
-              max_num = numbers[i]
+              max_num = movies[i]
               max_location = i
           }
       }
       // swap the first and the last
-      numbers[max_location] = numbers[j] // --> 10
-      numbers[j] = max_num
+      movies[max_location] = movies[j] // --> 10
+      movies[j] = max_num
   }
 
-  return numbers
+  return movies
 }
 
 /**
