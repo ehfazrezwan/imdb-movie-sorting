@@ -1,7 +1,7 @@
 /**
  *̶ ̶T̶O̶D̶O̶:̶ ̶C̶h̶a̶n̶g̶e̶ ̶s̶o̶r̶t̶M̶o̶v̶i̶e̶s̶B̶y̶R̶a̶n̶k̶(̶)̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶ ̶t̶o̶ ̶s̶o̶r̶t̶ ̶m̶o̶v̶i̶e̶s̶ ̶l̶i̶s̶t̶ ̶b̶y̶ ̶r̶a̶n̶k̶
  *̶ ̶T̶O̶D̶O̶:̶ ̶S̶o̶r̶t̶ ̶m̶o̶v̶i̶e̶s̶ ̶b̶y̶ ̶i̶d̶,̶ ̶r̶a̶n̶k̶,̶ ̶a̶n̶d̶ ̶t̶i̶t̶l̶e̶ ̶t̶h̶r̶o̶u̶g̶h̶ ̶d̶y̶n̶a̶m̶i̶c̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶
- * TODO: Create helper function called getMaxMovieObject() for finding max movie
+ ̶*̶ ̶T̶O̶D̶O̶:̶ ̶C̶r̶e̶a̶t̶e̶ ̶h̶e̶l̶p̶e̶r̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶ ̶c̶a̶l̶l̶e̶d̶ ̶g̶e̶t̶M̶a̶x̶M̶o̶v̶i̶e̶O̶b̶j̶e̶c̶t̶(̶)̶ ̶f̶o̶r̶ ̶f̶i̶n̶d̶i̶n̶g̶ ̶m̶a̶x̶ ̶m̶o̶v̶i̶e̶
  */
 
 // List of movies
