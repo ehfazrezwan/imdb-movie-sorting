@@ -59,7 +59,7 @@ let movies = [
 ]
 
 window.onload = function() {
-    let sortedMovies = sortMoviesByAttr(movies, "id")
+    let sortedMovies = sortMoviesByAttr(movies, "rank")
     // Display Movies list
     displayMovies(sortedMovies);
 }
@@ -123,16 +123,10 @@ function sortMoviesByAttr(movies, sortAttr){
       let max_num = movies[j];
       let max_location = j;
 
-      for (let i = j; i < movies.length; i++) {
-          if (movies[i][sortAttr] > max_num[sortAttr]) {
-              // Know max AND it's index (location)
-              max_num = movies[i]
-              max_location = i
-          }
-      }
+      let maxMovie = getMaxMovieObject(movies, j, sortAttr)
       // swap the first and the last
-      movies[max_location] = movies[j] // --> 10
-      movies[j] = max_num
+      movies[maxMovie.max_index] = movies[j] // --> 10
+      movies[j] = maxMovie.max_number
   }
 
   return movies
@@ -145,12 +139,12 @@ function sortMoviesByAttr(movies, sortAttr){
  */
 function getMaxMovieObject(movies, start, sortAttr){
   // Code from previous findMaxHelper() function
-  let maximum = numbers[start];
+  let maximum = movies[start];
   let max_location = start
 
-  for (let i = start; i < numbers.length; i++) {
-      if (numbers[i] > maximum) {
-          maximum = numbers[i]
+  for (let i = start; i < movies.length; i++) {
+      if (movies[i][sortAttr] > maximum[sortAttr]) {
+          maximum = movies[i]
           max_location = i
       }
   }
