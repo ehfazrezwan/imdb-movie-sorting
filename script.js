@@ -1,6 +1,6 @@
 /**
  *̶ ̶T̶O̶D̶O̶:̶ ̶C̶h̶a̶n̶g̶e̶ ̶s̶o̶r̶t̶M̶o̶v̶i̶e̶s̶B̶y̶R̶a̶n̶k̶(̶)̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶ ̶t̶o̶ ̶s̶o̶r̶t̶ ̶m̶o̶v̶i̶e̶s̶ ̶l̶i̶s̶t̶ ̶b̶y̶ ̶r̶a̶n̶k̶
- * TODO: Sort movies by id, rank, and title through dynamic function
+ *̶ ̶T̶O̶D̶O̶:̶ ̶S̶o̶r̶t̶ ̶m̶o̶v̶i̶e̶s̶ ̶b̶y̶ ̶i̶d̶,̶ ̶r̶a̶n̶k̶,̶ ̶a̶n̶d̶ ̶t̶i̶t̶l̶e̶ ̶t̶h̶r̶o̶u̶g̶h̶ ̶d̶y̶n̶a̶m̶i̶c̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶
  * TODO: Create helper function called getMaxMovieObject() for finding max movie
  */
 
@@ -59,9 +59,9 @@ let movies = [
 ]
 
 window.onload = function() {
-
+    let sortedMovies = sortMoviesByAttr(movies, "id")
     // Display Movies list
-    displayMovies(movies);
+    displayMovies(sortedMovies);
 }
 
 /**
@@ -69,7 +69,6 @@ window.onload = function() {
  * You don't have to worry so much about this
  */
 function displayMovies(movies){
-    sortMoviesByRank(movies)
     let table = "<table border='1' style='width: 100%'>";
     table += "<tr><th>ID</th><th>Name</th><th>Rank</th></tr>";
     for(let index=0; index<movies.length; index++){
@@ -118,6 +117,25 @@ function sortMoviesByRank(movies){
  */
 function sortMoviesByAttr(movies, sortAttr){
   // CODE GOES HERE
+  // Code from previous sortBestRatingsFirst() function
+  for (let j = 0; j < movies.length - 1; j++) {
+
+      let max_num = movies[j];
+      let max_location = j;
+
+      for (let i = j; i < movies.length; i++) {
+          if (movies[i][sortAttr] > max_num[sortAttr]) {
+              // Know max AND it's index (location)
+              max_num = movies[i]
+              max_location = i
+          }
+      }
+      // swap the first and the last
+      movies[max_location] = movies[j] // --> 10
+      movies[j] = max_num
+  }
+
+  return movies
 }
 
 
