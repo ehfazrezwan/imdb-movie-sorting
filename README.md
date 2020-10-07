@@ -10,10 +10,6 @@
 *** github_username, imdb-movie-sorting, twitter_handle, email
 -->
 
-
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -22,14 +18,13 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -38,7 +33,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Sorting Movies Alphabetically</h3>
+  <h3 align="center">Sorting Movies</h3>
 
   <p align="center">
     Project 2 of the PFJ course. Super simple, but definitely a good start to helping me brush up on my algo skills.
@@ -46,7 +41,7 @@
     <a href="https://github.com/ehfazrezwan/imdb-movie-sorting"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ehfazrezwan/imdb-movie-sorting">View Demo</a>
+    <a href="https://imdb-movie-sort-093bpwj.web.app/">View Demo</a>
     ·
     <a href="https://github.com/ehfazrezwan/imdb-movie-sorting/issues">Report Bug</a>
     ·
@@ -54,25 +49,23 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
+
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]]()
@@ -81,12 +74,11 @@ Implementation of a simple sorting algorithm written in JS - used to sort a samp
 
 ### Built With
 
-* [JavaScript ES6/ES2015](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [CSS3](https://www.w3.org/Style/CSS/)
-
-
+- [JavaScript ES6/ES2015](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [CSS3](https://www.w3.org/Style/CSS/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
@@ -94,27 +86,25 @@ To get a local copy up and running follow these simple steps.
 ### Installation
 
 1. Clone the repo
+
 ```sh
 git clone https://github.com/ehfazrezwan/imdb-movie-sorting.git
 ```
 
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 Open index.html from any browser, and view the results! Go through script.js to see the implementation of the algorithms.
 
-
-
-
 <!-- ROADMAP -->
+
 ## Roadmap
 
 See the [open issues](https://github.com/ehfazrezwan/imdb-movie-sorting/issues) for a list of proposed features (and known issues).
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -125,34 +115,29 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Ehfaz Rezwan - [@ehfazrezwan](https://www.linkedin.com/in/ehfaz-rezwan/) - ehfaz.rezwan@gmail.com
 
 Project Link: [https://github.com/ehfazrezwan/imdb-movie-sorting](https://github.com/ehfazrezwan/imdb-movie-sorting)
 
-
-
 <!-- ACKNOWLEDGEMENTS -->
+
 ## Acknowledgements
 
-* [CleverProgrammer - Rafeh Qazi](https://github.com/CleverProgrammer)
-
-
-
+- [CleverProgrammer - Rafeh Qazi](https://github.com/CleverProgrammer)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/ehfazrezwan/imdb-movie-sorting
 [contributors-url]: https://github.com/ehfazrezwan/imdb-movie-sorting/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ehfazrezwan/imdb-movie-sorting
